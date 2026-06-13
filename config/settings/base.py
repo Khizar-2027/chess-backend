@@ -3,6 +3,8 @@ from datetime import timedelta
 import os
 from dotenv import load_dotenv
 import dj_database_url
+import urllib.parse
+
 
 load_dotenv()
 
@@ -99,7 +101,7 @@ CORS_ALLOWED_ORIGINS = os.environ.get(
     "CORS_ALLOWED_ORIGINS", "http://localhost:5173"
 ).split(",")
 
-# Redis / Channels
+
 REDIS_URL = os.environ.get("REDIS_URL", "redis://127.0.0.1:6379")
 
 CHANNEL_LAYERS = {
