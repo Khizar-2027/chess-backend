@@ -1,0 +1,17 @@
+GET http://127.0.0.1:8000/api/games/25/move/history/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc5NzkyMDUyLCJpYXQiOjE3Nzk3OTE3NTIsImp0aSI6ImFlMDk4ZWVkN2RkMTQ3MjhhZDJkMjdiNTMxOGIzZGE4IiwidXNlcl9pZCI6IjUifQ.9N65asX2kYNOHdXgiQiQRNeiK37A1PXDwh8z40XFsik
+
+###
+
+POST http://127.0.0.1:8000/api/auth/login/
+Content-Type: application/json
+
+{
+    "username": "player2",
+    "password": "player2"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/games/27/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc5NzkyMDUyLCJpYXQiOjE3Nzk3OTE3NTIsImp0aSI6ImFlMDk4ZWVkN2RkMTQ3MjhhZDJkMjdiNTMxOGIzZGE4IiwidXNlcl9pZCI6IjUifQ.9N65asX2kYNOHdXgiQiQRNeiK37A1PXDwh8z40XFsik
