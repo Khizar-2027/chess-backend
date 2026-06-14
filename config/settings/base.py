@@ -6,7 +6,9 @@ import dj_database_url
 import urllib.parse
 
 
-load_dotenv()
+from pathlib import Path as _Path
+if _Path('.env').exists():
+    load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
